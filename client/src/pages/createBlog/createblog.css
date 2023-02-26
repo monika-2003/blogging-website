@@ -1,0 +1,44 @@
+.create-blog-page {
+    margin: 50px 100px;
+}
+
+.blog-image {
+    height: 70vh;
+    width: 100%;
+    object-fit: fill;
+}
+
+.blog-title {
+    width: 100%;
+    margin: 30px 0px;
+    display: flex;
+}
+
+.publish-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+}
+
+.publish-btn:active {
+    background-color: black;
+    color: white;
+}
+
+.title {
+    padding: 6px 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0px 20px;
+    outline: none;
+}
+
+.blog-content {
+    padding: 15px;
+    width: 100%;
+    font-size: 0.9rem;
+    outline: none;
+}

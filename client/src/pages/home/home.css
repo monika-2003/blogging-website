@@ -1,0 +1,44 @@
+.home-header {
+    background-color: black;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.505);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+.subheading {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.505);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 70px;
+}
+
+.blog-btn {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.categories h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.categories a {
+    color: white;
+    border: 1px solid grey;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}

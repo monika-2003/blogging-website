@@ -1,0 +1,33 @@
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 42px;
+    margin: 40px;
+}
+
+.post-container a {
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 10px; 
+}
+
+.post-img {
+    height: 200px;
+    width: 100%;
+}
+
+.post {
+    padding: 10px;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.post-description {
+    font-size: 1rem;
+    color: black;
+}

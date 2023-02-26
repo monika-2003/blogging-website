@@ -1,0 +1,48 @@
+.blog-page {
+    margin: 50px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icons {
+    margin: 20px 0px 10px auto;
+}
+
+.icon-btn {
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.information {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information span {
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.641);
+}
+
+.description-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin: 20px 0px;
+    text-align: justify;
+}
