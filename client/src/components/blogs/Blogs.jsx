@@ -9,7 +9,7 @@ function Blogs() {
 
   // other imports
   const [searchParams] = useSearchParams();
-  const Category = searchParams.get('category')
+  const Category = searchParams.get('category');
 
   // useState hooks
 
@@ -30,6 +30,12 @@ function Blogs() {
 
     fetechingPost()
   },[Category])
+
+
+  // for debugging
+
+
+
 
 
   return (

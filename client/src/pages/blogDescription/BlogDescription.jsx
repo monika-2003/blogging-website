@@ -20,7 +20,8 @@ function BlogDescription() {
 
   // useState hooks
 
-  const [post, setPost] = useState([])
+  const [post, setPost] = useState([]);
+  const [showPopup, setShowPopup] = useState(false);
   
 
 
@@ -59,9 +60,9 @@ function BlogDescription() {
     <div className='blog-page'>
       <img className='description-img' src={post.picture} />
       {
-        post.name == account.name ?
+        post.name === account.name ?
       <div className='icons'>
-        <button className='icon-btn' onClick={handleDelete}><RiDeleteBin6Fill className='icon' /></button>
+        <button className='icon-btn' onClick={()=>setShowPopup(true)}><RiDeleteBin6Fill className='icon' /></button>
         <button className='icon-btn' onClick={handleModify}><MdModeEditOutline className='icon' /></button>
       </div>
       : 
@@ -74,6 +75,18 @@ function BlogDescription() {
       </div>
       <h1 className='description-title'>{post.title}</h1>
       <p className='description'>{post.description}</p>
+
+      {
+          showPopup ?
+          <div className='popup'>
+            <h3>Are you sure you want to delete ?</h3>
+            <div className='popup-btns'>
+              <button onClick={handleDelete}>Yes</button>
+              <button onClick={()=>setShowPopup(false)}>No</button>
+            </div>
+          </div>
+          : null
+        }
 
     </div>
   )

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { LoginContext } from '../../context/LoginData';
 import { API } from '../../service/api';
@@ -7,13 +7,33 @@ import './Login.css';
 
 function Login({isUserAuthenticated}) {
 
+  // other imports
+
   const navigate = useNavigate();
   const {setAccount} = useContext(LoginContext);
+  const currentInput = useRef();
+
+
+
+  // usestate hooks
 
   const [loginCred, setLoginCred] = useState({
     email: '',
     password: ''
   })
+
+
+
+  // useEffect hooks
+
+  useEffect(()=> {
+    // console.log(currentInput.nextSibling.focus);
+    // currentInput.current.focus();
+  })
+
+
+
+  // function declarations
 
   const handleLoginValues = async(e) => {
     setLoginCred({...loginCred, [e.target.name]: e.target.value})
@@ -34,12 +54,11 @@ function Login({isUserAuthenticated}) {
     }
   }
 
-
   return (
     <div className='login-form-container'>
         <div className='form'>
             <h1>Login</h1>
-            <input type='email' name = 'email' placeholder='Email Id' onChange={handleLoginValues} />
+            <input type='email' name = 'email' placeholder='Email Id' onChange={handleLoginValues} ref={currentInput}/>
             <input type='password' name = 'password' placeholder='Password' onChange={handleLoginValues}/>
 
             <button onClick={handleLogin}>Login</button>

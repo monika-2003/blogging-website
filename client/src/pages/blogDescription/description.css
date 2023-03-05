@@ -33,7 +33,7 @@
 
 .information span {
     font-weight: 600;
-    color: rgba(128, 128, 128, 0.641);
+    color: 8px 13px 20px 2px rgb(179 179 179);
 }
 
 .description-title {
@@ -45,4 +45,34 @@
     font-size: 1.2rem;
     margin: 20px 0px;
     text-align: justify;
+}
+
+.popup {
+    height: 100px;
+    width: 270px;
+    padding: 20px 24px;
+    background-color: whitesmoke;
+    z-index: 9;
+    box-shadow: 9px 13px 20px 0px rgb(159, 159, 159);
+    margin: auto;
+    position: relative;
+    bottom: 450px;
+
+}
+
+.popup-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-btns button {
+    padding: 8px 20px;
+    background-color: rgb(95, 133, 245);
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    margin-top: 30px;
 }
